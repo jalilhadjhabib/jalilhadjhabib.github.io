@@ -34,17 +34,24 @@
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li href="#home" class="nav__link active"></a>
+                        <li class="nav__item"><a href="#home" class="nav__link"><span data-lang-key="home"></span></a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link"><span data-lang-key="about"></span></a></li>
+                        <li class="nav__item"><a href="#qualification" class="nav__link"><span data-lang-key="qualification"></span></a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link"><span data-lang-key="skills"></span></a></li>
+                        <li class="nav__item"><a href="#service" class="nav__link"><span data-lang-key="services"></span></a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link"><span data-lang-key="work"></span></a></li>
+                        <li class="nav__item"><div class="language-switcher">
+                            <a href="#" id="lang-switch" style="background-color: #3e6ff4;padding: 10px;padding-top: 5px;padding-bottom: 5px;border-radius: 10%;color: white;border-color: none;">FR</a>
+                        </div></li>
                     </ul>
+                   
+                    
                 </div>
 
-                <!--<div class="nav__toggle" id="nav-toggle">
+                <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
-                </div>-->
+                </div>
             </nav>
         </header>
 
@@ -52,11 +59,19 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <div class="mb-4"><h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Djalil</span><br> <h2 class="typed-text-output d-inline lead-paragraph mb-4"></h2>
-                        <div class="typed-text d-none">A Full Stack Developer, A Front End Developer, A Back End Developer, A Web Designer, A Web Developer</div>
+                    <div class="mb-4">
+                        <h1 class="home__title">
+                          <span data-lang-key="hi"></span><br>
+                          <span data-lang-key="im"></span><span class="home__title-color">Djalil</span><br>
+                          <h2 class="typed-text-output d-inline lead-paragraph mb-4"></h2>
+                          <div class="typed-text d-none">
+                            <span data-lang-key="hi"></span>A Full Stack Developer, A Front End Developer, A Back End Developer, A Web Designer, A Web Developer
+                          </div>
                         </h1>
-                    </div>
-                    <a href="assets/cv/cv-en.pdf" download class="button">Download My CV</a>
+                      </div>
+                      
+                    <a href="assets/cv/cv-en.pdf" download class="button"><span data-lang-key="downloadCV"></span>
+                    </a>
                 </div>
 
                 <div class="home__social">
@@ -78,7 +93,8 @@
 
             <!--===== ABOUT =====-->
             <section class="about section " id="about">
-                <h2 class="section-title">About Me</h2>
+                <h2 class="section-title"><span data-lang-key="aboutMe"></span>
+                </h2>
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
@@ -86,77 +102,82 @@
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">Who's Djalil ?</h2>
-                        <p class="about__text">Abdel Djalil Hadj Habib is a dedicated Full Stack Developer with a strong focus on using advanced frameworks like Laravel, VueJS, and ReactJS to build efficient and innovative web applications. His deep understanding of the end-to-end web development process, from design to deployment, enables him to tackle complex problems and deliver highly intuitive and engaging user experiences. Committed to continual learning and evolution, Djalil's adaptability and problem-solving skills make him a vital asset in the fast-paced world of web development. Outside of work, Djalil loves exploring new technologies, refining his skills, and contributing to open-source projects.</p>                    </div>                                   
+                        <h2 class="about__subtitle"><span data-lang-key="whoIsDjalil"></span>
+                        </h2>
+                        <p class="about__text"><span data-lang-key="aboutDjalil"></span>
+                        </p>                    </div>                                   
                 </div>
             </section>
 
             <section class="container-fluid py-5" id="qualification">
                 <div class="container">
                     <div class="position-relative d-flex align-items-center justify-content-center mb-4" style="padding-bottom: 20px;">
-                        <h2 class="section-title">Education & Expericence</h2>
+                        <h2 class="section-title"><span data-lang-key="educationExperience"></span>
+                        </h2>
             
                     </div>
                     <div class="position-relative d-flex align-items-center justify-content-center mb-4" style="padding-bottom: 20px;">
                         <div class="row">
                             <div class="col-lg-6 ">
-                                <h3 class="mb-4 mt-4 wow fadeInUp" data-wow-delay="0.1s">My Education</h3>
+                                <h3 class="mb-4 mt-4 wow fadeInUp" data-wow-delay="0.1s"><span data-lang-key="educationTitle"></span></h3>
                                 <div class="border-left border-primary pt-2 pl-4 ml-2">
                                     <div class="position-relative mb-4 wow fadeInUp" data-wow-delay="0.3s">
                                         <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                                        <h5 class="font-weight-bold mb-1">Information Systems Engineer</h5>
-                                        <p class="mb-2"><strong>CESI Exia School</strong> | <small>2023</small></p>
-                                        <p>Completed a comprehensive program in Information Systems Engineering at CESI Exia School, focusing on various aspects of software development, database management, and system architecture.</p>
+                                        <h5 class="font-weight-bold mb-1"><span data-lang-key="informationSystemsEngineer"></span></h5>
+                                        <p class="mb-2"><strong><span data-lang-key="cesiExiaSchool"></span></strong> | <small>2023</small></p>
+                                        <p><span data-lang-key="completedProgram"></span></p>
                                     </div>
                                     <div class="position-relative mb-4 wow fadeInUp" data-wow-delay="0.3s">
                                         <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                                        <h5 class="font-weight-bold mb-1">Developer in Information Systems Diploma</h5>
-                                        <p class="mb-2"><strong>CESI Exia School</strong> | <small>2022</small></p>
-                                        <p>Obtained a Developer in Information Systems Diploma from CESI Exia School, gaining practical knowledge and skills in web development, programming languages, and software engineering principles.</p>
+                                        <h5 class="font-weight-bold mb-1"><span data-lang-key="developerDiploma"></span></h5>
+                                        <p class="mb-2"><strong><span data-lang-key="cesiExiaSchool"></span></strong> | <small>2022</small></p>
+                                        <p><span data-lang-key="obtainedDiploma"></span></p>
                                     </div>
                                     <div class="position-relative mb-4 wow fadeInUp" data-wow-delay="0.3s">
                                         <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                                        <h5 class="font-weight-bold mb-1">Analyst Programmer Diploma</h5>
-                                        <p class="mb-2"><strong>CESI Exia School</strong> | <small>2020</small></p>
-                                        <p>Attained an Analyst Programmer Diploma from CESI Exia School, specializing in analyzing complex programming problems, designing efficient algorithms, and implementing software solutions.</p>
+                                        <h5 class="font-weight-bold mb-1"><span data-lang-key="analystProgrammerDiploma"></span></h5>
+                                        <p class="mb-2"><strong><span data-lang-key="cesiExiaSchool"></span></strong> | <small>2020</small></p>
+                                        <p><span data-lang-key="attainedDiploma"></span></p>
                                     </div>
                                     <div class="position-relative mb-4 wow fadeInUp" data-wow-delay="0.3s">
                                         <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                                        <h5 class="font-weight-bold mb-1">Mouloud Kacem High School</h5>
-                                        <p class="mb-2"><strong>Scientific Baccalaureate</strong> | <small>2018</small></p>
-                                        <p>Completed my high school education at Mouloud Kacem High School, specializing in the scientific track, with a focus on mathematics, physics, and computer science.</p>
+                                        <h5 class="font-weight-bold mb-1"><span data-lang-key="mouloudKacemHighSchool"></span></h5>
+                                        <p class="mb-2"><strong><span data-lang-key="scientificBaccalaureate"></span></strong> | <small>2018</small></p>
+                                        <p><span data-lang-key="completedHighSchool"></span></p>
                                     </div>
                                 </div>
                             </div>
+                            
                             <div class="col-lg-6">
-                                <h3 class="mb-4 wow fadeInUp" data-wow-delay="0.1s">My Experience</h3>
+                                <h3 class="mb-4 wow fadeInUp" data-wow-delay="0.1s"><span data-lang-key="experienceTitle"></span></h3>
                                 <div class="border-left border-primary pt-2 pl-4 ml-2">
                                     <div class="position-relative mb-4 wow fadeInUp" data-wow-delay="0.3s">
                                         <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                                        <h5 class="font-weight-bold mb-1">Internship - Information Systems Engineer</h5>
-                                        <p class="mb-2"><strong>Biteye</strong> | <small>January - June 2023</small></p>
-                                        <p>Successfully managed a project while simultaneously developing a web application with.</p>
+                                        <h5 class="font-weight-bold mb-1"><span data-lang-key="internshipInformationSystemsEngineer"></span></h5>
+                                        <p class="mb-2"><strong><span data-lang-key="biteye"></span></strong> | <small><span data-lang-key="internshipDuration1"></span></small></p>
+                                        <p><span data-lang-key="managedProject"></span></p>
                                     </div>
                                     <div class="position-relative mb-4 wow fadeInUp" data-wow-delay="0.3s">
                                         <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                                        <h5 class="font-weight-bold mb-1">Internship - Mobile Application Developer Intern</h5>
-                                        <p class="mb-2"><strong>Kartlive</strong> | <small>July 2021 - February 2022</small></p>
-                                        <p>Designed and implemented a mobile application improving user interaction and overall experience.</p>
+                                        <h5 class="font-weight-bold mb-1"><span data-lang-key="internshipMobileApplicationDeveloper"></span></h5>
+                                        <p class="mb-2"><strong><span data-lang-key="kartlive"></span></strong> | <small><span data-lang-key="internshipDuration2"></span></small></p>
+                                        <p><span data-lang-key="designedImplementedApp"></span></p>
                                     </div>
                                     <div class="position-relative mb-4 wow fadeInUp" data-wow-delay="0.3s">
                                         <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                                        <h5 class="font-weight-bold mb-1">Internship - Web Development Intern</h5>
-                                        <p class="mb-2"><strong>USTOMB</strong> | <small>January - April 2021</small></p>
-                                        <p>Effectively built a new website for the faculty, enhancing accessibility and user engagement.</p>
+                                        <h5 class="font-weight-bold mb-1"><span data-lang-key="internshipWebDevelopment"></span></h5>
+                                        <p class="mb-2"><strong><span data-lang-key="ustomb"></span></strong> | <small><span data-lang-key="internshipDuration3"></span></small></p>
+                                        <p><span data-lang-key="builtNewWebsite"></span></p>
                                     </div>
                                     <div class="position-relative mb-4 wow fadeInUp" data-wow-delay="0.3s">
                                         <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                                        <h5 class="font-weight-bold mb-1">Internship - Analyst Programmer</h5>
-                                        <p class="mb-2"><strong>University Hospital of Oran</strong> | <small>April - June 2020</small></p>
-                                        <p>Conducted web development and maintenance, increasing site efficiency and usability.</p>
+                                        <h5 class="font-weight-bold mb-1"><span data-lang-key="internshipAnalystProgrammer"></span></h5>
+                                        <p class="mb-2"><strong><span data-lang-key="universityHospitalOran"></span></strong> | <small><span data-lang-key="internshipDuration4"></span></small></p>
+                                        <p><span data-lang-key="conductedWebDevelopment"></span></p>
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
                     <!-- Rest of the code -->
@@ -170,78 +191,69 @@
 
             <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
+    <h2 class="section-title"><span data-lang-key="skillsTitle"></span></h2>
 
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">As a dedicated Full Stack Developer, I bring along robust problem-solving skills and a keen eye for UI/UX design. Proficient in Laravel, VueJS, and ReactJS, I have a proven record of delivering high-performance web solutions.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="fa-brands fa-laravel skills__icon"></i>
-                                <span class="skills__name">Laravel</span>
-                            </div>
-                            <div class="skills__bar skills__laravel">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="fa-brands fa-vuejs skills__icon"></i>
-                                <span class="skills__name">VueJS</span>
-                            </div>
-                            <div class="skills__bar skills__vuejs">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="fa-brands fa-react skills__icon"></i>
-                                <span class="skills__name">ReactJS</span>
-                            </div>
-                            <div class="skills__bar skills__react">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">75%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="fa-brands fa-node skills__icon"></i>
-                                <span class="skills__name">NodeJS</span>
-                            </div>
-                            <div class="skills__bar skills__nodejs">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/skills.gif" alt="" class="skills__img">
-                    </div>
+    <div class="skills__container bd-grid">
+        <div>
+            <h2 class="skills__subtitle"><span data-lang-key="professionalSkillsSubtitle"></span></h2>
+            <p class="skills__text"><span data-lang-key="professionalSkillsText"></span></p>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class="fa-brands fa-laravel skills__icon"></i>
+                    <span class="skills__name"><span data-lang-key="laravel"></span></span>
                 </div>
-            </section>
+                <div class="skills__bar skills__laravel"></div>
+                <div>
+                    <span class="skills__percentage"><span data-lang-key="laravelPercentage"></span></span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class="fa-brands fa-vuejs skills__icon"></i>
+                    <span class="skills__name"><span data-lang-key="vuejs"></span></span>
+                </div>
+                <div class="skills__bar skills__vuejs"></div>
+                <div>
+                    <span class="skills__percentage"><span data-lang-key="vuejsPercentage"></span></span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class="fa-brands fa-react skills__icon"></i>
+                    <span class="skills__name"><span data-lang-key="reactjs"></span></span>
+                </div>
+                <div class="skills__bar skills__react"></div>
+                <div>
+                    <span class="skills__percentage"><span data-lang-key="reactjsPercentage"></span></span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class="fa-brands fa-node skills__icon"></i>
+                    <span class="skills__name"><span data-lang-key="nodejs"></span></span>
+                </div>
+                <div class="skills__bar skills__nodejs"></div>
+                <div>
+                    <span class="skills__percentage"><span data-lang-key="nodejsPercentage"></span></span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="assets/img/skills.gif" alt="" class="skills__img">
+        </div>
+    </div>
+</section>
+
 
 <!-- Service Start -->
 <div class="container-fluid bg-light my-5 py-6 pb-4" id="service">
     <div class="container">
         <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="col-lg-6">
-                <h2 class="section-title">Services</h2>
+                <h2 class="section-title"><span data-lang-key="servicesTitle"></span></h2>
             </div>
             <div class="col-lg-6 text-lg-end d-none d-lg-block">
-                <a target="_blank" class="button" href="https://www.linkedin.com/in/abdel-djalil-hadj-habib-790420243/">Hire Me</a>
+                <a target="_blank" class="button" href="https://www.linkedin.com/in/abdel-djalil-hadj-habib-790420243/"><span data-lang-key="hireMe"></span></a>
             </div>
         </div>
         <div class="row g-4">
@@ -251,8 +263,8 @@
                         <i class="fa fa-crop-alt fa-2x text-dark"></i>
                     </div>
                     <div class="ms-sm-4">
-                        <h4 class="mb-3">API Development</h4>
-                        <span>Expert in crafting custom and integrated APIs, ensuring scalability and robustness for versatile web applications.</span>
+                        <h4 class="mb-3"><span data-lang-key="apiDevelopmentTitle"></span></h4>
+                        <span><span data-lang-key="apiDevelopmentDescription"></span></span>
                     </div>
                 </div>
             </div>
@@ -262,8 +274,8 @@
                         <i class="fa fa-code-branch fa-2x text-dark"></i>
                     </div>
                     <div class="ms-sm-4">
-                        <h4 class="mb-3">Intuitive UX/UI Design</h4>
-                        <span>Crafting captivating, user-centric designs that ensure seamless user experiences and maximize customer retention.</span>
+                        <h4 class="mb-3"><span data-lang-key="uxUiDesignTitle"></span></h4>
+                        <span><span data-lang-key="uxUiDesignDescription"></span></span>
                     </div>
                 </div>
             </div>
@@ -273,8 +285,8 @@
                         <i class="fa fa-code fa-2x text-dark"></i>
                     </div>
                     <div class="ms-sm-4">
-                        <h4 class="mb-3">Full Stack Mastery</h4>
-                        <span>Leveraging a diverse technology stack to deliver end-to-end solutions, from backend logic to frontend interactivity.</span>
+                        <h4 class="mb-3"><span data-lang-key="fullStackMasteryTitle"></span></h4>
+                        <span><span data-lang-key="fullStackMasteryDescription"></span></span>
                     </div>
                 </div>
             </div>
@@ -284,15 +296,15 @@
                         <i class="fa fa-laptop-code fa-2x text-dark"></i>
                     </div>
                     <div class="ms-sm-4">
-                        <h4 class="mb-3">Performance Optimization</h4>
-                        <span>Utilizing advanced optimization techniques to ensure rapid load times, improved SEO, and enhanced user satisfaction.</span>
+                        <h4 class="mb-3"><span data-lang-key="performanceOptimizationTitle"></span></h4>
+                        <span><span data-lang-key="performanceOptimizationDescription"></span></span>
                     </div>
                 </div>
             </div>
         </div>
-        
     </div>
 </div>
+
 <!-- Service End -->
 
 
@@ -300,10 +312,10 @@
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
-                <h2 class="section-title">Projects</h2>
-
-                <center><h2>Comming Soon</h2></center>
+                <h2 class="section-title"><span data-lang-key="projectsTitle"></span></h2>
+                <center><h2><span data-lang-key="comingSoon"></span></h2></center>
             </section>
+            
 
             <!--===== CONTACT =====-->
             <!--<section class="contact section" id="contact">
@@ -378,6 +390,8 @@
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
         <script src="assets/js/animate.js"></script>
+        <script src="assets/js/lang.js"></script>
+
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="lib/wow/wow.min.js"></script>
