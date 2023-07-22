@@ -1,0 +1,38 @@
+body.dark-mode {
+    background-color: #1a1a1a; /* Change this color to your preferred dark background color */
+    color: #ffffff; /* Change this color to your preferred text color in dark mode */
+    transition: 0.5s ease; /* Smooth transition for toggle button background color */
+
+}
+.dark-mode .l-header {
+    background-color: #1a1a1a; /* Change this color to your preferred dark background color */
+    color: #ffffff; /* Change this color to your preferred text color in dark mode */
+    transition: 0.5s ease; /* Smooth transition for toggle button background color */
+
+  }
+  .dark-mode .nav__link{
+    color: white;
+  }
+  .dark-mode .nav__logo{
+    color: white;
+  }
+  .dark-mode .home__social-icon{
+    color: white;
+  }
+  .dark-mode .skills__data{
+    background-color: #212121; /* Change this color to your preferred dark background color */
+  }
+
+.dark-mode .container-fluid{
+    background-color: #212121; /* Change this color to your preferred dark background color */
+}
+
+.dark-mode .service-item{
+    background-color: #1a1a1a; /* Change this color to your preferred dark background color */
+}
+.dark-mode .footer{
+    background-color: #212121; /* Change this color to your preferred dark background color */
+}
+
+
+

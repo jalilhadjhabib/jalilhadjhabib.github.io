@@ -49,6 +49,9 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  transition: 0.5s ease; /* Smooth transition for toggle button background color */
+  background-color: white;
+  
 }
 
 h1, h2, p {
@@ -387,7 +390,7 @@ background-color: #2A0C4E;
 /* ===== FOOTER =====*/
 .footer {
   background-color: #f1f1f1;
-  color: #black;
+  color: black;
   text-align: center;
   font-weight: var(--font-semi);
   padding: 1rem 0;
