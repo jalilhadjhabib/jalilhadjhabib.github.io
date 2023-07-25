@@ -34,6 +34,13 @@ body.dark-mode {
   color: white;
     background-color: #212121; /* Change this color to your preferred dark background color */
 }
-
+.dark-mode .test{
+  color: white;
+    background-color: red; /* Change this color to your preferred dark background color */
+}
+.test {
+  color: white !important;
+  background-color: red !important;
+}
 
 
