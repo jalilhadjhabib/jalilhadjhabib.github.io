@@ -438,7 +438,7 @@
 
         <!--===== FOOTER =====--> 
         <footer class="footer">
-            <p class="footer__copy">2024 &#169; JalilKane. All rights reserved</p>
+            <p class="footer__copy" id="footer-year"></p>
         </footer>
 
         
@@ -480,6 +480,15 @@
                 darkModeIcon.classList.add('fa-moon'); // Show moon icon for dark mode
               }
             });
+
+            function updateFooterYear() {
+                const currentYear = new Date().getFullYear(); // Get the current year
+                const footerElement = document.getElementById("footer-year");
+                footerElement.innerHTML = `${currentYear} &#169; JalilKane. All rights reserved`;
+            }
+
+            // Call the function on page load
+            updateFooterYear();
             </script>
             
             
